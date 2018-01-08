@@ -1,0 +1,35 @@
+<div id="challenge{{challenge.id}}" class="challenge-card">
+  <h3><span class="badge">{{challenge.id}}</span> {{challenge.name}} ({{challenge.duration}} minutes)</h3>
+  <div class="content-div">
+    <h4>Description</h4>
+    <p>{{challenge.description}} </p>
+    <!-- PLACEHOLDER -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem lectus, sagittis in lorem ut, fringilla porta lectus. Suspendisse imperdiet dui sed diam sollicitudin, quis venenatis odio vehicula. Vestibulum ultrices leo ante, vel pellentesque est viverra vel. In dignissim, ligula ac ultricies efficitur, ante purus congue lacus, sit amet laoreet magna quam quis mauris. Fusce blandit iaculis ipsum, eget porttitor lectus lobortis nec. Donec fringilla at nisl sit amet hendrerit. Vestibulum efficitur est nec risus gravida semper. Cras eu feugiat ligula. Nunc tincidunt dui vel ipsum interdum viverra. Suspendisse odio nisl, congue eget eleifend a, hendrerit porta sem. Mauris massa dui, feugiat nec leo sit amet, iaculis auctor arcu. Pellentesque nisi leo, molestie sit amet porttitor ut, finibus eu urna. Nunc nec massa non erat congue consectetur. Duis dui ex, sollicitudin sed ex quis, iaculis ultricies nulla. Suspendisse potenti. In ac arcu tortor.</p>
+    <p>Maecenas arcu justo, tempus at orci pulvinar, ultrices condimentum nisl. Suspendisse mollis massa vel suscipit cursus. Ut congue pellentesque ipsum, a suscipit quam volutpat ac. Sed at metus vel mi tristique sollicitudin. Donec sit amet purus tempor lacus varius eleifend. Fusce lacinia quam sem, fermentum maximus ex egestas vel. Cras tempus pretium est, ut ultrices sapien interdum ac. Etiam orci neque, posuere ut mauris non, porttitor interdum nulla. Donec mi risus, vestibulum sed porttitor gravida, ultrices et est. Nunc gravida tortor mauris, vel scelerisque ante interdum ut. Cras quis velit sem. Aenean non suscipit libero.</p>
+  </div>
+  <div class="wide-div">
+    <div [class.left-div]="dispCode">
+      <div class="content-div">
+        <h4>Thoughts</h4>
+        <!-- PLACEHOLDER -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem lectus, sagittis in lorem ut, fringilla porta lectus. Suspendisse imperdiet dui sed diam sollicitudin, quis venenatis odio vehicula. Vestibulum ultrices leo ante, vel pellentesque est viverra vel. In dignissim, ligula ac ultricies efficitur, ante purus congue lacus, sit amet laoreet magna quam quis mauris. Fusce blandit iaculis ipsum, eget porttitor lectus lobortis nec. Donec fringilla at nisl sit amet hendrerit. Vestibulum efficitur est nec risus gravida semper. Cras eu feugiat ligula. Nunc tincidunt dui vel ipsum interdum viverra. Suspendisse odio nisl, congue eget eleifend a, hendrerit porta sem. Mauris massa dui, feugiat nec leo sit amet, iaculis auctor arcu. Pellentesque nisi leo, molestie sit amet porttitor ut, finibus eu urna. Nunc nec massa non erat congue consectetur. Duis dui ex, sollicitudin sed ex quis, iaculis ultricies nulla. Suspendisse potenti. In ac arcu tortor.</p>
+        <p>Maecenas arcu justo, tempus at orci pulvinar, ultrices condimentum nisl. Suspendisse mollis massa vel suscipit cursus. Ut congue pellentesque ipsum, a suscipit quam volutpat ac. Sed at metus vel mi tristique sollicitudin. Donec sit amet purus tempor lacus varius eleifend. Fusce lacinia quam sem, fermentum maximus ex egestas vel. Cras tempus pretium est, ut ultrices sapien interdum ac. Etiam orci neque, posuere ut mauris non, porttitor interdum nulla. Donec mi risus, vestibulum sed porttitor gravida, ultrices et est. Nunc gravida tortor mauris, vel scelerisque ante interdum ut. Cras quis velit sem. Aenean non suscipit libero.</p>
+      </div>
+    </div>
+    <div [class.right-div]="dispCode">
+      <div class="content-div wb-prettify">
+        <h4>Code <button class="code-btn" (click)="dispCode = !dispCode">{{dispCode ? 'Hide' : 'Show'}}</button></h4>
+        <pre class="prettyprint linenums" [hidden]="!dispCode"><code class="language-{{challenge.language}}">{{challenge.code}}</code></pre>
+      </div>
+    </div>
+  </div>
+  <!--<div [class.left-div]="dispCode">-->
+  <div class="content-div">
+    <h4>Result</h4>
+    <p>{{challenge.result}}</p>
+    <!-- PLACEHOLDER -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem lectus, sagittis in lorem ut, fringilla porta lectus. Suspendisse imperdiet dui sed diam sollicitudin, quis venenatis odio vehicula. Vestibulum ultrices leo ante, vel pellentesque est viverra vel. In dignissim, ligula ac ultricies efficitur, ante purus congue lacus, sit amet laoreet magna quam quis mauris. Fusce blandit iaculis ipsum, eget porttitor lectus lobortis nec. Donec fringilla at nisl sit amet hendrerit. Vestibulum efficitur est nec risus gravida semper. Cras eu feugiat ligula. Nunc tincidunt dui vel ipsum interdum viverra. Suspendisse odio nisl, congue eget eleifend a, hendrerit porta sem. Mauris massa dui, feugiat nec leo sit amet, iaculis auctor arcu. Pellentesque nisi leo, molestie sit amet porttitor ut, finibus eu urna. Nunc nec massa non erat congue consectetur. Duis dui ex, sollicitudin sed ex quis, iaculis ultricies nulla. Suspendisse potenti. In ac arcu tortor.</p>
+    <p>Maecenas arcu justo, tempus at orci pulvinar, ultrices condimentum nisl. Suspendisse mollis massa vel suscipit cursus. Ut congue pellentesque ipsum, a suscipit quam volutpat ac. Sed at metus vel mi tristique sollicitudin. Donec sit amet purus tempor lacus varius eleifend. Fusce lacinia quam sem, fermentum maximus ex egestas vel. Cras tempus pretium est, ut ultrices sapien interdum ac. Etiam orci neque, posuere ut mauris non, porttitor interdum nulla. Donec mi risus, vestibulum sed porttitor gravida, ultrices et est. Nunc gravida tortor mauris, vel scelerisque ante interdum ut. Cras quis velit sem. Aenean non suscipit libero.</p>
+  </div>
+  <!--</div>-->
+</div>

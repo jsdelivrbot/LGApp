@@ -1,0 +1,71 @@
+.challenge-card {
+  margin-bottom: 2em;
+  background-color: #EEEEEE;
+  border-radius: 25px;
+  padding: 0em 0em 0em 1em;
+  overflow: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.challenge-card h3 {
+  color: darkblue;
+  text-transform: capitalize;
+  //font-weight: bold;
+}
+
+.challenge-card .badge {
+  display: inline;
+  font-size: small;
+  line-height: 1em;
+  position: center;
+  padding: 0.4em 0.7em 0.4em 0.7em;
+}
+
+.challenge-card h4 {
+  padding-left: 0.5em;
+  font-weight: bold;
+}
+
+.challenge-card p {
+  padding-left: 0em;
+}
+
+.wide-div {
+  display: table;
+}
+
+.wide-div .left-div {
+  float: none;
+  width: 39%;
+  vertical-align: top;
+  display: table-cell;
+}
+
+.wide-div .right-div {
+  float: none;
+  width: 61%;
+  vertical-align: top;
+  display: table-cell;
+}
+
+.content-div {
+  background-color: #DDDDDD;
+  border-radius: 15px;
+  padding: 0.3em 1em 0.3em 1em;
+  margin-bottom: 0.8em;
+  margin-right: 1em;
+  //width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .wide-div .left-div {
+    width: 100%;
+    vertical-align: unset;
+    display: block;
+  }
+
+  .wide-div .right-div {
+    width: 100%;
+    vertical-align: unset;
+    display: block;
+  }
+}
