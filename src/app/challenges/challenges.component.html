@@ -1,3 +1,26 @@
+<h2>{{title}}</h2>
 <p>
-  challenges works!
+  The Challenge section will contain links to google and others coding challenge
 </p>
+
+<div class="toc">
+  <div class="toc-title">
+    <h4>{{title}} <button class="toc-btn" (click)="dispToc = !dispToc">{{dispToc ? 'Hide' : 'Show'}}</button></h4>
+  </div>
+  <div [hidden]="!dispToc">
+    <div class="toc-content">
+      <div class="toc-elt" *ngFor="let challenge of challenges">
+        <a pageScroll href="#challenge{{challenge.id}}">{{challenge.name}}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ul class="challenges">
+  <li *ngFor="let challenge of challenges">
+    <app-challenge [challenge]="challenge"></app-challenge>
+  </li>
+</ul>
+
+
+

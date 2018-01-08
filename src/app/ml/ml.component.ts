@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MlComponent implements OnInit {
 
+  title = 'Machine Learning';
+
   constructor() { }
 
   ngOnInit() {

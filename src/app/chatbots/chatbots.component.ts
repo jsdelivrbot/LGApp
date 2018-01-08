@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatbotsComponent implements OnInit {
 
+  title = 'Chatbots';
+
   constructor() { }
 
   ngOnInit() {

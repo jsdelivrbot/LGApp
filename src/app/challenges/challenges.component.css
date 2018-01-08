@@ -1,0 +1,32 @@
+.challenges {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.toc-content {
+  display: table;
+  width: 100%;
+  padding-left: 10px;
+  margin-bottom: 1%;
+}
+
+/*
+.toc-content .toc-elt:nth-child(even) {
+  background-color: #DDDDDD;
+}
+
+.toc-content .toc-elt:nth-child(odd) {
+  background-color: #EEEEEE;
+}
+*/
+
+.toc-elt {
+  display: table-cell;
+  float: left;
+  border-radius: 15px;
+  margin: 0px 2px 4px 2px;
+  padding: 3px 6px 3px 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #EEEEEE;
+;
+}
