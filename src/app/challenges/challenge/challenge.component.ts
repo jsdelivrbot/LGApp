@@ -11,7 +11,8 @@ export class Challenge {
 }
 
 export const CHALLENGES: Challenge[] = [
-  {id: 1, name: 'challenge ONE', duration: 120, description: 'this is a challenge description', code: '/******************************************************************************\n' +
+  {id: 1, name: 'challenge ONE', duration: 120, description: 'this is a challenge description',
+    code: '/******************************************************************************\n' +
     ' *  Compilation:  javac HelloWorld.java\n' +
     ' *  Execution:    java HelloWorld\n' +
     ' *\n' +
@@ -37,7 +38,8 @@ export const CHALLENGES: Challenge[] = [
     '    }\n' +
     '\n' +
     '}', result: 'good job', language: 'java'},
-  {id: 2, name: 'challenge TWO', duration: 101, description: 'this is a challenge description', code: '# Import the modules\n' +
+  {id: 2, name: 'challenge TWO', duration: 101, description: 'this is a challenge description',
+    code: '# Import the modules\n' +
     'import sys\n' +
     'import random\n' +
     '\n' +
@@ -74,10 +76,14 @@ export const CHALLENGES: Challenge[] = [
     '    \n' +
     '    elif answers == 8:\n' +
     '        print "My sources say no"', result: 'yatta', language: 'python'},
-  {id: 3, name: 'challenge THREE', duration: 86, description: 'this is a challenge description', code: 'monkey.eat(new Banana())', result: 'nom nom nom nom', language: 'java'},
-  {id: 4, name: 'challenge FOUR', duration: 23, description: 'this is a challenge description', code: 'Hello World!', result: 'Goodbye Bob', language: 'java'},
-  {id: 5, name: 'challenge FIVE', duration: -7, description: 'this is a challenge description', code: 'str.toUppercase().toLowercase()', result: 'just make up your mind', language: 'java'},
-  {id: 6, name: 'challenge SIX', duration: 1221, description: 'this is a challenge description', code: 'this.life.getMeaning()', result: '42', language: 'java'}
+  {id: 3, name: 'challenge THREE', duration: 86, description: 'this is a challenge description',
+    code: 'monkey.eat(new Banana())', result: 'nom nom nom nom', language: 'java'},
+  {id: 4, name: 'challenge FOUR', duration: 23, description: 'this is a challenge description',
+    code: 'Hello World!', result: 'Goodbye Bob', language: 'java'},
+  {id: 5, name: 'challenge FIVE', duration: -7, description: 'this is a challenge description',
+    code: 'str.toUppercase().toLowercase()', result: 'just make up your mind', language: 'java'},
+  {id: 6, name: 'challenge SIX', duration: 1221, description: 'this is a challenge description',
+    code: 'this.life.getMeaning()', result: '42', language: 'java'}
 ];
 
 @Component({
